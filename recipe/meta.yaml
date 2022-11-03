@@ -1,5 +1,5 @@
 {% set name = "dpdispatcher" %}
-{% set version = "0.4.18" %}
+{% set version = "0.4.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0e177258fbf7ac6ce595933d669366723bd8f851448df2216b3efdb7b5434952
+  sha256: 2ad6cc4cfa094574cf02a4012638f86a0701d8f63a4db528c0980347c926b625
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - dpdisp = dpdispatcher.dpdisp:main
 
