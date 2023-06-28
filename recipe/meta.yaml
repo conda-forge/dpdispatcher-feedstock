@@ -18,16 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools_scm
 
   run:
-    - python >=3.6
-    - dargs
+    - python >=3.7
+    - dargs >=0.2.9
     - paramiko
     - requests
-    - tqdm
+    - tqdm >=4.9.0
 
 test:
   imports:
