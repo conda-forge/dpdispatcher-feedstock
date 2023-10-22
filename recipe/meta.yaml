@@ -1,5 +1,5 @@
 {% set name = "dpdispatcher" %}
-{% set version = "0.5.11" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c44ed5ee868ba99193d9e12be43b40ac0df9587d8cd71ffe9260ef6ced0cc59
+  sha256: 641073ccdac8c9e571e3b93d33c35a99107d39e71e2ea8f3f5a5ec8263aec728
 
 build:
   number: 0
@@ -34,6 +34,9 @@ test:
     - dpdispatcher
   commands:
     - dpdisp -h
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/deepmodeling/dpdispatcher
