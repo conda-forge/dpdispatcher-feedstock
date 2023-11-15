@@ -24,10 +24,11 @@ requirements:
 
   run:
     - python >=3.7
-    - dargs >=0.2.9
+    - dargs >=0.4.1
     - paramiko
     - requests
     - tqdm >=4.9.0
+    - pyyaml
 
 test:
   imports:
