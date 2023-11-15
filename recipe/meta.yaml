@@ -1,5 +1,5 @@
 {% set name = "dpdispatcher" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 641073ccdac8c9e571e3b93d33c35a99107d39e71e2ea8f3f5a5ec8263aec728
+  sha256: 73f23f62b9ac4f55259e61efd6b58a4f9bec9b9f212ce59b9a0e800a79effeb6
 
 build:
   number: 0
@@ -24,10 +24,11 @@ requirements:
 
   run:
     - python >=3.7
-    - dargs >=0.2.9
+    - dargs >=0.4.1
     - paramiko
     - requests
     - tqdm >=4.9.0
+    - pyyaml
 
 test:
   imports:
