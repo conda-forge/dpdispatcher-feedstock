@@ -1,5 +1,5 @@
 {% set name = "dpdispatcher" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b499f8dc2256b7ed5c6b2808ff53150308bbf3848cd09f090291365e5a6f3b4c
+  sha256: 9c31aa6091758dbb813698880bd26a8dd95b06e7e2fa98abccdd28b16c1da80e
 
 build:
   number: 0
