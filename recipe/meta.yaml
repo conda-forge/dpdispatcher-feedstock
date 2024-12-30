@@ -30,6 +30,7 @@ requirements:
     - requests
     - tqdm >=4.9.0
     - pyyaml
+    - tomli
 
 test:
   imports:
